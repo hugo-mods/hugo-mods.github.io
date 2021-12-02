@@ -5,7 +5,8 @@ draft: false
 description: "Hugo Community Mods"
 ---
 
-Welcome! This page and [organization](https://github.com/hugo-mods/) are all user-friendly modules for [Hugo](https://gohugo.io/), a fast static site generator.
+Welcome! This page is all about user-friendly modules for [Hugo](https://gohugo.io/), a fast static site generator.
+The [hugo-mods organization](https://github.com/hugo-mods/) is where all the repos are!
 
 Below you can find all currently available modules which you can easily use to power up your site or theme.
 Fun fact: The entire page makes use of the modules itself, showing you how they look fully integrated!
@@ -31,4 +32,4 @@ lines:
       wait: 0
 {{</ term >}}
 
-Made and maintained with {{< icon "heart" >}} by [kdevo](https://kdevo.github.io/).
+Made with {{< icon "heart" >}} by [kdevo](https://kdevo.github.io/).
