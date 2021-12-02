@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'),
+       url('../fonts/ubuntu/ubuntu-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu/ubuntu-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Mono'),
+       url('../fonts/ubuntu/ubuntu-mono-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu/ubuntu-mono-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+$font-header: "Ubuntu", "Roboto", "Helvetica", Arial, serif;
+$font-body: "Ubuntu", "Roboto", "Hel­vetica", Arial, sans-serif;
+$font-code: "Ubuntu Mono", "Monaco", "Andale Mono", "Courier New", monospace;
+$font-tagline: $font-code;
+$nav-font: $font-body;

@@ -1,0 +1,13 @@
+contact: fas user-astronaut
+heart: 
+  id: fas heart
+  description: Donate
+get:
+  id: fas chevron-right
+  description: Go get it
+example:
+  id: fas eye
+  description: View preview
+learn:
+  id: fas graduation-cap
+  description: Learn more

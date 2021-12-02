@@ -1,0 +1,37 @@
+// https://coolors.co/040926-3f37c9-b5179e-f07167-6c1aef
+
+$oxford-blue: #040926ff;
+$persian-blue: #3f37c9ff;
+$byzantine: #b5179eff;
+$bittersweet: #f07167ff;
+$electric-indigo: #6c1aefff;
+
+$primary-fg-color: #fafafa;
+$primary-bg-color: $oxford-blue;
+$button-bg-color: $persian-blue;
+$secondary-bg-color: rgb(8, 3, 15);
+
+$accent-color: $bittersweet;
+$alt-text-color: #cecece;
+
+//-- Fine-tuning --
+$tagline-color: $primary-fg-color;
+
+$button-fg-color: $primary-fg-color;
+// Nav color of the full nav which shows up when pressing the burger on mobile viewports.
+$full-nav-bg-color: $primary-bg-color;
+$full-nav-fg-color: $primary-fg-color;
+
+// The links have some shadow effect. It usually makes sense to leave this as is.
+$link-shadow-color: $primary-bg-color;
+
+$gallery-bg-color: $secondary-bg-color;
+$gallery-modal-bg-color: $gallery-bg-color;
+$gallery-overlay-bg-color: $primary-bg-color;
+$gallery-overlay-title-color: $primary-fg-color;
+$gallery-overlay-subtitle-color: $alt-text-color;
+$gallery-modal-close-color: $primary-fg-color;
+
+$footer-bg-color: $persian-blue;
+$footer-icon-color: $primary-fg-color;
+$footer-text-color: $alt-text-color;

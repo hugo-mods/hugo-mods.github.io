@@ -1,0 +1,33 @@
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    var logo = document.getElementsByClassName('home-logo')[0];
+    var navlogo = document.getElementsByClassName('logo')[0];
+    var bg = document.getElementsByClassName('bg')[0];
+    var modals = document.getElementsByClassName('gallery-img-container');
+    var modalHeaders = document.getElementsByClassName('modal-header-img-container');
+    
+    if (logo && navlogo && bg && modals && modalHeaders) {
+        function hue(deg, transition) {
+            filter = 'filter: hue-rotate(' + deg + 'deg); transition: ' + transition + 'ms linear';
+            navlogo.style = filter;
+            bg.style = filter;
+            for (let i = 0; i < modals.length; i++) {
+                modals[i].style = filter;
+                modalHeaders[i].style = filter;
+            }
+        }
+
+        var lastDeg = 0
+        var clickCounter = 0
+        logo.addEventListener('click', () => {
+            deg = Math.floor(Math.random() * 360); 
+            while (Math.abs(deg - lastDeg) < 36) {
+                deg = Math.floor(Math.random() * 360); 
+            }
+            hue(deg, Math.abs(deg - lastDeg) / 36 / 10 * 1000)
+            lastDeg = deg;
+            clickCounter++;
+        })
+    }
+})
+</script>

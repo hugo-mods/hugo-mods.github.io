@@ -1,0 +1,21 @@
+[data-termynal] {
+    border-radius: 4px;
+    text-align: left;
+    // background: $secondary-bg-color;
+
+    background: #292e39;
+    color: $byzantine
+}
+
+[data-ty] {
+    color: $primary-fg-color;
+}
+
+[data-ty="input"]:before,
+[data-ty-prompt]:before {
+    color: $bittersweet;
+}
+
+#termynal-about:after {
+    content: "";
+}
