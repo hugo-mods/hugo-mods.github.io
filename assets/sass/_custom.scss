@@ -19,3 +19,13 @@
 #termynal-about:after {
     content: "";
 }
+
+@media (max-width: $mobile-breakpoint) {
+  .bg {
+    background-attachment: scroll;
+  }
+}
+
+.home-logo { 
+  animation: scale-in-center .8s cubic-bezier(.25, .46, .45, .94) both;
+}
