@@ -1,44 +1,336 @@
-<!doctype html><html lang=en-us class=no-js><head><meta name=generator content="Hugo 0.83.0"><title>Hugo Community Modules</title><meta name=title content="Hugo Community Modules"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content="strict-origin-when-cross-origin"><base href=https://hugo-mods.github.io><meta name=description content="hugo-mods: Powerful community modules for Hugo, a static site generator."><meta name=author content="kdevo"><meta property="og:title" content="Hugo Community Modules"><meta property="og:type" content="website"><meta property="og:url" content="https://hugo-mods.github.io/"><meta property="og:image" content="https://hugo-mods.github.io/opengraph.jpg"><meta property="og:image:width" content="1280"><meta property="og:image:height" content="640"><link rel=icon type=image/png href=https://hugo-mods.github.io/favicon.png><meta property="og:description" content="hugo-mods: Powerful community modules for Hugo, a static site generator."><link rel=canonical href=https://hugo-mods.github.io/><link href=https://hugo-mods.github.io/index.xml rel=alternate type=application/rss+xml title="Hugo Community Modules"><link rel=stylesheet href=https://hugo-mods.github.io/style.d213a22609169971a31d2e220831d79901d1d3567eca7a86d4df3ee75348efb8.css><script type=application/ld+json>{"@context":"http://www.schema.org","@id":"https://hugo-mods.github.io","@type":"Person","address":null,"affiliation":[],"alternateName":"hugo-mods","description":"hugo-mods: Powerful community modules for Hugo, a static site generator.","email":null,"image":"https://avatars.githubusercontent.com/u/84660689?v=4","name":"kdevo","sameAs":["https://github.com/hugo-mods/","https://github.com/sponsors/kdevo"],"url":"https://hugo-mods.github.io"}</script><script src=https://hugo-mods.github.io/lazyimg/lazysizes/lazysizes.min.js async></script><script>window.addEventListener('DOMContentLoaded',i=>{var f=document.getElementsByClassName('home-logo')[0],c=document.getElementsByClassName('logo')[0],d=document.getElementsByClassName('bg')[0],b=document.getElementsByClassName('gallery-img-container'),e=document.getElementsByClassName('modal-header-img-container'),a,h;if(f&&c&&d&&b&&e){function g(a,f){filter='filter: hue-rotate('+a+'deg); transition: '+f+'ms linear',c.style=filter,d.style=filter;for(let a=0;a<b.length;a++)b[a].style=filter,e[a].style=filter}a=0,h=0,f.addEventListener('click',()=>{for(deg=Math.floor(Math.random()*360);Math.abs(deg-a)<36;)deg=Math.floor(Math.random()*360);g(deg,Math.abs(deg-a)/36/10*1e3),a=deg,h++})}})</script></head><body><header class="row middle-xs center-xs bg lazyload"><div class=col-xs-12><picture><source type=image/webp height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-220x.webp 220w,
+<!doctype html><html lang=en-us class=no-js>
+<head>
+<meta name=generator content="Hugo 0.89.4">
+<title>Hugo Community Modules</title>
+<meta name=title content="Hugo Community Modules">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=referrer content="strict-origin-when-cross-origin">
+<base href=https://hugo-mods.github.io>
+<meta name=description content="hugo-mods: Powerful community modules for Hugo, a static site generator.">
+<meta name=author content="kdevo">
+<meta property="og:title" content="Hugo Community Modules">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hugo-mods.github.io/">
+<meta property="og:image" content="https://hugo-mods.github.io/opengraph.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<link rel=icon type=image/png href=https://hugo-mods.github.io/favicon.png>
+<meta property="og:description" content="hugo-mods: Powerful community modules for Hugo, a static site generator.">
+<link rel=canonical href=https://hugo-mods.github.io/>
+<link href=https://hugo-mods.github.io/index.xml rel=alternate type=application/rss+xml title="Hugo Community Modules">
+<link rel=stylesheet href=https://hugo-mods.github.io/style.9b1449d6d7d90f9a1ccaf7c16687f19196e9bab252bd299dfcd2d6fe52d0937d.css>
+<script type=application/ld+json>{"@context":"http://www.schema.org","@id":"https://hugo-mods.github.io","@type":"Person","address":null,"affiliation":[],"alternateName":"hugo-mods","description":"hugo-mods: Powerful community modules for Hugo, a static site generator.","email":null,"image":"https://avatars.githubusercontent.com/u/84660689?v=4","name":"kdevo","sameAs":["https://github.com/hugo-mods/","https://github.com/sponsors/kdevo"],"url":"https://hugo-mods.github.io"}</script>
+<script src=https://hugo-mods.github.io/lazyimg/lazysizes/lazysizes.min.js async></script>
+<script>window.addEventListener('DOMContentLoaded',i=>{var f=document.getElementsByClassName('home-logo')[0],c=document.getElementsByClassName('logo')[0],d=document.getElementsByClassName('bg')[0],b=document.getElementsByClassName('gallery-img-container'),e=document.getElementsByClassName('modal-header-img-container'),a,h;if(f&&c&&d&&b&&e){function g(a,f){filter='filter: hue-rotate('+a+'deg); transition: '+f+'ms linear',c.style=filter,d.style=filter;for(let a=0;a<b.length;a++)b[a].style=filter,e[a].style=filter}a=0,h=0,f.addEventListener('click',()=>{for(deg=Math.floor(Math.random()*360);Math.abs(deg-a)<36;)deg=Math.floor(Math.random()*360);g(deg,Math.abs(deg-a)/36/10*1e3),a=deg,h++})}})</script>
+</head>
+<body>
+<header class="row middle-xs center-xs bg lazyload">
+<div class=col-xs-12>
+<picture>
+<source type=image/webp height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-220x.webp 220w,
 https://hugo-mods.github.io/logo-320x.webp 320w,
 https://hugo-mods.github.io/logo-420x.webp 420w,
 https://hugo-mods.github.io/logo-520x.webp 520w,
-https://hugo-mods.github.io/logo-600x.webp 600w"><noscript><img src=https://hugo-mods.github.io/logo-600x.png class=home-logo loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/logo-220x.png 220w,
+https://hugo-mods.github.io/logo-600x.webp 600w">
+<noscript>
+<img src=https://hugo-mods.github.io/logo-600x.png class=home-logo loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/logo-220x.png 220w,
 https://hugo-mods.github.io/logo-320x.png 320w,
 https://hugo-mods.github.io/logo-420x.png 420w,
 https://hugo-mods.github.io/logo-520x.png 520w,
-https://hugo-mods.github.io/logo-600x.png 600w" alt="Hugo Community Modules"></noscript><img data-src=https://hugo-mods.github.io/logo-600x.png class="home-logo lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-220x.png 220w,
+https://hugo-mods.github.io/logo-600x.png 600w" alt="Hugo Community Modules">
+</noscript><img data-src=https://hugo-mods.github.io/logo-600x.png class="home-logo lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-220x.png 220w,
 https://hugo-mods.github.io/logo-320x.png 320w,
 https://hugo-mods.github.io/logo-420x.png 420w,
 https://hugo-mods.github.io/logo-520x.png 520w,
-https://hugo-mods.github.io/logo-600x.png 600w" alt="Hugo Community Modules"></picture><h2 id=hugo-mod-get--ucursor>hugo mod get -u<span class=cursor>|</span></h2><noscript><h2><svg class="icon"><use xlink:href="#icon-warning"/></svg></h2><h2>Please enable JavaScript for the full experience!</h2></noscript></div></header><nav class="row middle-xs center-xs"><div class="col-xs-6 col-sm-1 logo"><a href=/#><picture><source type=image/webp height=96 width=96 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-66x.webp 66w,
-https://hugo-mods.github.io/logo-96x.webp 96w"><img data-src=https://hugo-mods.github.io/logo-96x.png class=lazyload height=96 width=96 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-66x.png 66w,
-https://hugo-mods.github.io/logo-96x.png 96w" alt=Home></picture></a></div><div class="col-xs-3 col-sm-2 nav-item"><h3><a href=/#about>About</a></h3></div><div class="col-xs-3 col-sm-2 nav-item"><h3><a href=/#mods>Mods</a></h3></div><div class="col-xs-3 col-sm-2 nav-item"><h3><a href=/#blog>Blog</a></h3></div><div class="col-xs-3 col-sm-2 nav-item"><h3><a href=/#join>Join</a></h3></div><div class="col-xs-6 col-sm-1 nav-toggle"><a href class=nav-icon onclick=return!1><svg class="icon"><use xlink:href="#icon-menu"/></svg></a></div></nav><section class="nav-full row middle-xs center-xs"><div class=col-xs-12><div class="row middle-xs center-xs"><div class=col-xs-12><h1><a href=/#about>About</a></h1></div><div class=col-xs-12><h1><a href=/#mods>Mods</a></h1></div><div class=col-xs-12><h1><a href=/#blog>Blog</a></h1></div><div class=col-xs-12><h1><a href=/#join>Join</a></h1></div></div></div></section><main><section class=about id=about><div class="container middle-xs"><div class="row center-xs"><div class=col-xs-12><h1>Hugo Community Modules</h1></div></div><div class="row center-xs"><div class="col-xs-12 middle-xs"><p>Welcome! This page is all about user-friendly modules for <a href=https://gohugo.io/>Hugo</a>, a fast static site generator.
-The <a href=https://github.com/hugo-mods/>hugo-mods organization</a> is where all the repos are!</p><p>Below you can find all currently available modules which you can easily use to power up your site or theme.
-Fun fact: The entire page makes use of the modules itself, showing you how they look fully integrated!</p><div id=termynal-about data-termynal><div class=term-content><span data-ty=input data-ty-delay=500>hugo mod init github.com/username/your-repo</span>
+https://hugo-mods.github.io/logo-600x.png 600w" alt="Hugo Community Modules">
+</picture>
+<h2 id=hugo-mod-get--ucursor>hugo mod get -u<span class=cursor>|</span></h2>
+<noscript>
+<h2><svg class="icon"><use xlink:href="#icon-warning"/></svg></h2>
+<h2>Please enable JavaScript for the full experience!</h2>
+</noscript>
+</div>
+</header>
+<nav class="row middle-xs center-xs">
+<div class="col-xs-6 col-sm-1 logo">
+<a href=/#>
+<picture>
+<source type=image/webp height=96 width=96 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-66x.webp 66w,
+https://hugo-mods.github.io/logo-96x.webp 96w">
+<img data-src=https://hugo-mods.github.io/logo-96x.png class=lazyload height=96 width=96 data-sizes=auto data-srcset="https://hugo-mods.github.io/logo-66x.png 66w,
+https://hugo-mods.github.io/logo-96x.png 96w" alt=Home>
+</picture>
+</a>
+</div>
+<div class="col-xs-3 col-sm-2 nav-item">
+<h3><a href=/#about>About</a></h3>
+</div>
+<div class="col-xs-3 col-sm-2 nav-item">
+<h3><a href=/#mods>Mods</a></h3>
+</div>
+<div class="col-xs-3 col-sm-2 nav-item">
+<h3><a href=/#blog>Blog</a></h3>
+</div>
+<div class="col-xs-3 col-sm-2 nav-item">
+<h3><a href=/#join>Join</a></h3>
+</div>
+<div class="col-xs-6 col-sm-1 nav-toggle">
+<a href class=nav-icon onclick=return!1><svg class="icon"><use xlink:href="#icon-menu"/></svg>
+</a>
+</div>
+</nav>
+<section class="nav-full row middle-xs center-xs">
+<div class=col-xs-12>
+<div class="row middle-xs center-xs">
+<div class=col-xs-12><h1><a href=/#about>About</a></h1></div>
+<div class=col-xs-12><h1><a href=/#mods>Mods</a></h1></div>
+<div class=col-xs-12><h1><a href=/#blog>Blog</a></h1></div>
+<div class=col-xs-12><h1><a href=/#join>Join</a></h1></div>
+</div>
+</div>
+</section>
+<main>
+<section class=about id=about>
+<div class="container middle-xs">
+<div class="row center-xs">
+<div class=col-xs-12>
+<h1>Hugo Community Modules</h1>
+</div>
+</div>
+<div class="row center-xs">
+<div class="col-xs-12 middle-xs">
+<p>Welcome! This page is all about user-friendly modules for <a href=https://gohugo.io/>Hugo</a>, a fast static site generator.
+The <a href=https://github.com/hugo-mods/>hugo-mods organization</a> is where all the repos are!</p>
+<p>Below you can find all currently available modules which you can easily use to power up your site or theme.
+Fun fact: The entire page makes use of the modules itself, showing you how they look fully integrated!</p>
+<div id=termynal-about data-termynal>
+<div class=term-content>
+<span data-ty=input data-ty-delay=500>hugo mod init github.com/username/your-repo</span>
 <span data-ty data-ty-delay>go: creating new go.mod: module github.com/username/your-repo</span>
 <span data-ty=input data-ty-delay>$EDITOR config.yaml</span>
 <span data-ty data-ty-delay>[[module.imports]]</span>
 <span data-ty data-ty-delay>path = "github.com/hugo-mods/icons"</span>
 <span data-ty=input data-ty-delay=500>hugo mod get -u</span>
 <span data-ty data-ty-delay>hugo: downloading modules …</span>
-<span data-ty data-ty-delay=0>✓ hugo: collected modules in 3372 ms</span></div></div><p>Made with<svg class="icon" id="heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3.0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></svg> by <a href=https://kdevo.github.io/>kdevo</a>.</p></div></div></div></section><section class=gallery id=mods><div class=row><div class="gallery-item col-xs-12 col-md-6"><div class=gallery-img-container><picture><source type=image/webp srcset=data:image/webp;base64,UklGRqIBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGUAAAABYFtbWxNz6FmBBZhAS1o2Mc+kHTuwBRtorRXnRP1/R4gIRW7bNvIpu/UzkrcYS2C1x97CiOcWIERZqwjEYKw1AwDV1lqraaTk6ybtS3JdeNlfFtTZ4eAB3IIuwn1AffrrI+pzAgBWUDggFgEAAPAGAJ0BKhAAEAAAGBInsAJ0TIB+oGAAeUR7BflD0aD8JckE8vXD1/R+SzUA/iP8p/1P5Z8LMeWjzctkYi6IhoAA/vDf96wRuC1uO/dbr82h09/gXW/5eM0DaTRyqWLEMevkgEP3V/+N55cPxmbd9vtO8nfnXH/l2SFYgS2L1iWOhvvy/61khOn/lLcj6v3X26D3IyZdPRgT23Sv/o4raIbv+Wn+D/PFX6zs3nH8Sz1/5T/xbin16yvUpEdPmpFbr7YZfHni7CwI+am/6v+V+Xv4kUG3zn/+7VP48FRjWEw6/WIbI8269tvx/zZnktT/JvN9z24/77O7HOg27pdfEfcQhjd3YhYkaPnEtPWJRQT3H4C1QAAA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.webp 420w,
-https://hugo-mods.github.io/lazyimg-600x.webp 600w"><noscript><img src=https://hugo-mods.github.io/lazyimg-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
-https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg></noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACCElEQVR4nIxTv2tTURg998fLa02TNCWpFauJtAEROygIabsoFKFFiigUl4g4tNDZv8LFrdBR6qKDSBU7qINgsLiUYv1FkylNLSaEpHn5+d69nyTQpckL+eAu957vcr5zvsPRo85dfnq9dXphmOtL/OvgmO08HxI2pfjgI2xP17rBpFv/SuTqfLpcuVNqKBo7tuePgNd9M3i7TiHLst+YHjZrNTQyRTsZGvbeXXnC8n0xiESR4ELGDRPgQmCayTg4EgCencZ2iJj+GYqZXr4qBBMgQNkAFBdMYTW344l1jEDLy8aB82fOy46nONfMurgw8yP4YPFQRaCZQOsTIQBojezf5ubur3qStW+xFxgd/8hSj2/fyqpLr3zcCrUUEXCQs0P41ryJhh5AlbwgYjhwoiBugLVlIxBRDoQlKeGgCj+yTgwmq0FBQlIFIyIPIRUYCB7UcGSNwyajQ3YZkaUvDnYfEmdTYJwVJpZmCsH4oh+j0AoY4DV4UcKcCiNzaG9+/30ygtoLnI0kO2xM7/hiqmq9B+lJrajttFKA4UEqOGIuhK8093u6MHGtvC89zhqTWokWY04grVW9grXTza578OEz38gXK/cvDMvZIVOgVqdt/3m+0Q3rmoXwjfS9qN984TcNmvSdSay/9HVdZdcs5MS/rUC5+i5TNOlTQWy54XpWP3H+HwAA//8Xrso1qJNeBgAAAABJRU5ErkJggg==" data-src=https://hugo-mods.github.io/lazyimg-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
-https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg></picture></div><div class="row center-xs middle-xs overlay"><a href=#lazyimg class=gallery-modal-link id=lazyimg></a><div class=col-xs><h2>lazyimg</h2><h3>Lazy-image loading with superpowers.</h3></div></div></div><div class="gallery-item col-xs-12 col-md-6"><div class=gallery-img-container><picture><source type=image/webp srcset="data:image/webp;base64,UklGRlwBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGMAAAABYFNbW5v0smMBAyhgZcVJqqdkwwMucMCeTJzT8/+REBGK3LZt5FN262dUpRirYM33NcPI95EgRHuvCcTivHcLADXee29ophfHqXwhdR6i59aDshwHD+AWdBHuA+rTXx9RnysAVlA4INIAAABQBQCdASoQABAAABgSJ7ACdLoBJgP4BhAH+A/gGWAcpn8AHn/lHe8QXyiYJuoW8YX4rIAA/v+d136SjjyCaUqJbrmU4vCra/WHTgsCN4wBGODxT0miU2ySbWfZXSJyCff5oYuZAe5C8C++YZ05SRQv/YauP1W7Hfwm6pMJi+VhbI0qE/xWwioaBohgL0P7v6TRxZFogFKLtzG8UXy8/aIS5dSX99gAsdju5VzZcH7rh4BxKsIoGh+qST3NP5FodclbfUKNUHqf1oRLu1HV6fLAAAA=" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.webp 420w,
-https://hugo-mods.github.io/icons-600x.webp 600w"><noscript><img src=https://hugo-mods.github.io/icons-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/icons-420x.png 420w,
-https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons></noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB3ElEQVR4nJSTvWtTURjGn/d83Nx7ExNtr8FicLHVFDVDBAlUqEOWSunQwa3/RBf9C5xdnbM5FrUOBUEoVBAE7VIUcdBBran5uiS595xXcltFmg/MM53znofnPT/ecwQmaM6vlC/5lfIkz/iAQsULET5oonO/UCh4UwfMtMIVyHiVhV399XNuZaqATGY5iGK7KVh4IO1HijczmZvBfwe43NsQ1q1oktCKoCAqZPTGKK8cqpxZXDDMjwSZgGEQwwBgYSm67GbVi37Yqv9rpzd4rBvZdJUI1wf7XXxaOqCva9rGABMiKyBIQWuBG/LcVim6ujtIZMZ+rtnZoZe52h0GPSHQ+T9QM8sXYGMGSYJQlJT737tovTv625nBPwh8Tw0hMMCG4QQpSE8l62NYAt4fJecjENwqkUwQXvHB0mfxbc1VFu1YwCODHhRgGfM2v3VbFE8QzH6u2d2h0xcILi4umDY9J2C+3XeQdroJV4/1x9Bx7+Lw9YeJUwhbh3Wt8kpYWXVsShgMxsiGrX3Yb7x9dto/8h0wBbUey70YgCGNlBR7V7JubZR3rByvtJ5O3wqD3LWOlymuj/MNT+FE+Vl/u96In1pyefas3v7Snqr/sbRfLGu/NPE7/w4AAP//B2epA67omyAAAAAASUVORK5CYII=" data-src=https://hugo-mods.github.io/icons-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.png 420w,
-https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons></picture></div><div class="row center-xs middle-xs overlay"><a href=#icons class=gallery-modal-link id=icons></a><div class=col-xs><h2>Icons</h2><h3>Icons that scale.</h3></div></div></div></div><div id=modal-lazyimg class=modal><div class=modal-box><div class=close><svg class="icon"><use xlink:href="#icon-close"/></svg></div><div class=modal-container><div class=modal-header><div class=modal-header-img-container><picture><source type=image/webp srcset=data:image/webp;base64,UklGRqIBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGUAAAABYFtbWxNz6FmBBZhAS1o2Mc+kHTuwBRtorRXnRP1/R4gIRW7bNvIpu/UzkrcYS2C1x97CiOcWIERZqwjEYKw1AwDV1lqraaTk6ybtS3JdeNlfFtTZ4eAB3IIuwn1AffrrI+pzAgBWUDggFgEAAPAGAJ0BKhAAEAAAGBInsAJ0TIB+oGAAeUR7BflD0aD8JckE8vXD1/R+SzUA/iP8p/1P5Z8LMeWjzctkYi6IhoAA/vDf96wRuC1uO/dbr82h09/gXW/5eM0DaTRyqWLEMevkgEP3V/+N55cPxmbd9vtO8nfnXH/l2SFYgS2L1iWOhvvy/61khOn/lLcj6v3X26D3IyZdPRgT23Sv/o4raIbv+Wn+D/PFX6zs3nH8Sz1/5T/xbin16yvUpEdPmpFbr7YZfHni7CwI+am/6v+V+Xv4kUG3zn/+7VP48FRjWEw6/WIbI8269tvx/zZnktT/JvN9z24/77O7HOg27pdfEfcQhjd3YhYkaPnEtPWJRQT3H4C1QAAA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.webp 420w,
-https://hugo-mods.github.io/lazyimg-600x.webp 600w"><noscript><img src=https://hugo-mods.github.io/lazyimg-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
-https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg></noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACCElEQVR4nIxTv2tTURg998fLa02TNCWpFauJtAEROygIabsoFKFFiigUl4g4tNDZv8LFrdBR6qKDSBU7qINgsLiUYv1FkylNLSaEpHn5+d69nyTQpckL+eAu957vcr5zvsPRo85dfnq9dXphmOtL/OvgmO08HxI2pfjgI2xP17rBpFv/SuTqfLpcuVNqKBo7tuePgNd9M3i7TiHLst+YHjZrNTQyRTsZGvbeXXnC8n0xiESR4ELGDRPgQmCayTg4EgCencZ2iJj+GYqZXr4qBBMgQNkAFBdMYTW344l1jEDLy8aB82fOy46nONfMurgw8yP4YPFQRaCZQOsTIQBojezf5ubur3qStW+xFxgd/8hSj2/fyqpLr3zcCrUUEXCQs0P41ryJhh5AlbwgYjhwoiBugLVlIxBRDoQlKeGgCj+yTgwmq0FBQlIFIyIPIRUYCB7UcGSNwyajQ3YZkaUvDnYfEmdTYJwVJpZmCsH4oh+j0AoY4DV4UcKcCiNzaG9+/30ygtoLnI0kO2xM7/hiqmq9B+lJrajttFKA4UEqOGIuhK8093u6MHGtvC89zhqTWokWY04grVW9grXTza578OEz38gXK/cvDMvZIVOgVqdt/3m+0Q3rmoXwjfS9qN984TcNmvSdSay/9HVdZdcs5MS/rUC5+i5TNOlTQWy54XpWP3H+HwAA//8Xrso1qJNeBgAAAABJRU5ErkJggg==" data-src=https://hugo-mods.github.io/lazyimg-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
-https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg></picture></div></div><div class=modal-content><h2>lazyimg</h2><article class=entry-content><p>Lazy image loading with superpowers 🦸</p></article><div class="row center-xs"><div class=col-xs><a href=https://github.com/hugo-mods/lazyimg><button type=submit><svg class="icon"><use xlink:href="#icon-get"/></svg> Get it</button></a></div><div class=col-xs><a href=https://hugo-mods-lazyimg.netlify.app/><button type=submit><svg class="icon"><use xlink:href="#icon-example"/></svg> Preview</button></a></div></div><div class="row center-xs"><div class=repo-info><a href=https://github.com/hugo-mods/lazyimg/pulse><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-github-octocat"/></svg></a><a href=https://api.github.com/repos/hugo-mods/lazyimg/languages>HTML (96%)</a>
-&bull; <a href=https://github.com/hugo-mods/lazyimg/stargazers>3 stars</a>
-&bull; <a href=https://github.com/hugo-mods/lazyimg/issues>6 open issues</a></div></div></div></div></div></div><div id=modal-icons class=modal><div class=modal-box><div class=close><svg class="icon"><use xlink:href="#icon-close"/></svg></div><div class=modal-container><div class=modal-header><div class=modal-header-img-container><picture><source type=image/webp srcset="data:image/webp;base64,UklGRlwBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGMAAAABYFNbW5v0smMBAyhgZcVJqqdkwwMucMCeTJzT8/+REBGK3LZt5FN262dUpRirYM33NcPI95EgRHuvCcTivHcLADXee29ophfHqXwhdR6i59aDshwHD+AWdBHuA+rTXx9RnysAVlA4INIAAABQBQCdASoQABAAABgSJ7ACdLoBJgP4BhAH+A/gGWAcpn8AHn/lHe8QXyiYJuoW8YX4rIAA/v+d136SjjyCaUqJbrmU4vCra/WHTgsCN4wBGODxT0miU2ySbWfZXSJyCff5oYuZAe5C8C++YZ05SRQv/YauP1W7Hfwm6pMJi+VhbI0qE/xWwioaBohgL0P7v6TRxZFogFKLtzG8UXy8/aIS5dSX99gAsdju5VzZcH7rh4BxKsIoGh+qST3NP5FodclbfUKNUHqf1oRLu1HV6fLAAAA=" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.webp 420w,
-https://hugo-mods.github.io/icons-600x.webp 600w"><noscript><img src=https://hugo-mods.github.io/icons-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/icons-420x.png 420w,
-https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons></noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB3ElEQVR4nJSTvWtTURjGn/d83Nx7ExNtr8FicLHVFDVDBAlUqEOWSunQwa3/RBf9C5xdnbM5FrUOBUEoVBAE7VIUcdBBran5uiS595xXcltFmg/MM53znofnPT/ecwQmaM6vlC/5lfIkz/iAQsULET5oonO/UCh4UwfMtMIVyHiVhV399XNuZaqATGY5iGK7KVh4IO1HijczmZvBfwe43NsQ1q1oktCKoCAqZPTGKK8cqpxZXDDMjwSZgGEQwwBgYSm67GbVi37Yqv9rpzd4rBvZdJUI1wf7XXxaOqCva9rGABMiKyBIQWuBG/LcVim6ujtIZMZ+rtnZoZe52h0GPSHQ+T9QM8sXYGMGSYJQlJT737tovTv625nBPwh8Tw0hMMCG4QQpSE8l62NYAt4fJecjENwqkUwQXvHB0mfxbc1VFu1YwCODHhRgGfM2v3VbFE8QzH6u2d2h0xcILi4umDY9J2C+3XeQdroJV4/1x9Bx7+Lw9YeJUwhbh3Wt8kpYWXVsShgMxsiGrX3Yb7x9dto/8h0wBbUey70YgCGNlBR7V7JubZR3rByvtJ5O3wqD3LWOlymuj/MNT+FE+Vl/u96In1pyefas3v7Snqr/sbRfLGu/NPE7/w4AAP//B2epA67omyAAAAAASUVORK5CYII=" data-src=https://hugo-mods.github.io/icons-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.png 420w,
-https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons></picture></div></div><div class=modal-content><h2>Icons</h2><article class=entry-content><p>A Hugo icon system module that scales.</p></article><div class="row center-xs"><div class=col-xs><a href=./blog/icons/><button type=submit><svg class="icon"><use xlink:href="#icon-learn"/></svg> Learn more</button></a></div><div class=col-xs><a href=https://github.com/hugo-mods/icons><button type=submit><svg class="icon"><use xlink:href="#icon-get"/></svg> Get it</button></a></div><div class=col-xs><a href=https://hugo-mods-icons.netlify.app/><button type=submit><svg class="icon"><use xlink:href="#icon-example"/></svg> Preview</button></a></div></div><div class="row center-xs"><div class=repo-info><a href=https://github.com/hugo-mods/icons/pulse><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-github-octocat"/></svg></a><a href=https://api.github.com/repos/hugo-mods/icons/languages>HTML (90%)</a>
+<span data-ty data-ty-delay=0>✓ hugo: collected modules in 3372 ms</span>
+</div>
+</div>
+<p>Made with
+<svg class="icon" id="heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3.0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg></svg> by <a href=https://kdevo.github.io/>kdevo</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section class=gallery id=mods>
+<div class=row>
+<div class="gallery-item col-xs-12 col-md-6">
+<div class=gallery-img-container>
+<picture>
+<source type=image/webp srcset=data:image/webp;base64,UklGRooBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGUAAAABYFtbWxNz6FmBBZhAS1o2Mc+kHTuwBRtorRXnRP1/R4gIRW7bNvIpu/UzkrcYS2C1x97CiOcWIERZqwjEYKw1AwDV1lqraaTk6ybtS3JdeNlfFtTZ4eAB3IIuwn1AffrrI+pzAgBWUDgg/gAAANAEAJ0BKhAAEAAAGBInsAJ0XoBdQG+AeUR7BX65+jIUqXlDv5XvgCDM9uk8ruNYAP7D/ae+BXxfhz4MyR1ybb/W1cf/xf0L4daTOoP8tvvcmLvb+qPxa5Pd9zc+2hUCHc9jD3xjvy/LxuCSLR1nU/Hmrd/6IXs7BGKPtTWfcHBuySoMx9yUvYD71fbkURdvegD18/L+f/ebt+5capI5yYPY5Nanv1l/4w6v9v+i48bnFUH//Yhx6P45/eGwf5CzPkftf/wz77+4wSYUev//RrKPC90/rsVUcMP/wa9ObBn/11ddGxY1zU+9ceks/6Z3pnMDC0NestHiMjswRrgA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.webp 420w,
+https://hugo-mods.github.io/lazyimg-600x.webp 600w">
+<noscript>
+<img src=https://hugo-mods.github.io/lazyimg-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
+https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg>
+</noscript><img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTElEQVR4nHyT30sUbxTGnzPvzo6r+9X1x9eIlDVZiQihRMHVm6yFyouwDTQCr5ICb6yLKIL+ggL/CG+iq35IUnQXkhRsBFKauhfuamup6zI6OrPzvidGiHB39Lk8PHzmPGeeN4BD1Bz/AXfrZYdGQN64nLK+tPv6NL/h2E0T61YxxJXxh6Fw5wPpmiHt+PfDvlUu3mDcHiokE/05qyuxsnOsK51kZl8vlQ7mpxUW52RDIc8vDIN6t22J7JY7HYnQwJULofXWjoNLl93A2QOam8RwNIpu3QA0IQAKdkPj4ZPnMF7qD6RvJaBBIUwFEBi/GqiNTIyyAwFmyKIHgSCm0dUUTQ4NLC8cADCELuAkNKh2AlP49aOeb5EbsVUZhSIBMOAtAaVi2ZzzFMA09qeYBfCelkYu9a24Lc8rYTZ4REEuNtz/8ck5D1tVwOIqMBOybgvYA/7TbwCDgQCK2OYaLMsYDLIgoUNnC3ViHSIg92MFsYvcdhO8VKVXp7WRbt3kmgQzeU2hjdbBnnx9/GqeG6EkUKHtogoFrMkTyKwWX83O7R6MkBuJo8B12FOVUNAQHn3Wxg7egDnmAbw/LSWgB3mxuob6xx5nFo7sAbOLpc90jyWeeKE9SNGGVBL3RZDHz/SJo3uQTml498GayG/y9aZavTdsaLBtnonU0kTstCi1+8urbWNnOtl1MWsl+n/u3BksJHnTv8q+rzHQPA9RuzlVbe5NZraC/HElMvXf3agvoOwGf2Wc/Yp6+22HYgU9ci2VmTnl6/sTAAD//yqW9q7emNkLAAAAAElFTkSuQmCC data-src=https://hugo-mods.github.io/lazyimg-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
+https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg>
+</picture>
+</div>
+<div class="row center-xs middle-xs overlay">
+<a href=#lazyimg class=gallery-modal-link id=lazyimg></a>
+<div class=col-xs>
+<h2>lazyimg</h2>
+<h3>Lazy-image loading with superpowers.</h3>
+</div>
+</div>
+</div>
+<div class="gallery-item col-xs-12 col-md-6">
+<div class=gallery-img-container>
+<picture>
+<source type=image/webp srcset=data:image/webp;base64,UklGRmYBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGMAAAABYFNbW5v0smMBAyhgZcVJqqdkwwMucMCeTJzT8/+REBGK3LZt5FN262dUpRirYM33NcPI95EgRHuvCcTivHcLADXee29ophfHqXwhdR6i59aDshwHD+AWdBHuA+rTXx9RnysAVlA4INwAAACwBQCdASoQABAAABgSJ7ACdLoB+AEsA/gHMAbbB/Zt+g0nL2AP2O9IC5AHNH5gG+x21z+WTWAA/v860l5TEoMHgqbzAALvdmf5zWBPdf03+ANgi8vXw/W8fbex92uUmtq8nB7i/l4+AqD7l7Z53QmrExfQ/W8Vq3LYcPgCfPg4MLfUfo//j+EysH/8cFU82fcqqvXQ6zllm8psvGdm83Ecm/pdJqHk3xf/5Ntp7hKSer33hyYfON9f2/cB8TF+2zF0/kvzS9qK2t/tm7W8b7+pDS/fw5J4dnGukiQA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.webp 420w,
+https://hugo-mods.github.io/icons-600x.webp 600w">
+<noscript>
+<img src=https://hugo-mods.github.io/icons-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/icons-420x.png 420w,
+https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons>
+</noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJElEQVR4nISSz2sTQRzF3/zaZHf7gzVptVgqtAmERCMUlEoOFtpLJUjJwYNQ9F8oePAoqLdePHgXvImI9KAXewo5CYUWD2qKFsRSokXS1iSbnR+ysYXYXfXBwjLzePN58x2Ov+jU6UU4zZ1pAgrmtta39zZjfbEBhJ9DIDv2AfXvUmhj6+A2YV7bqB8RL40LGJ+Yg5A7C4TLsqamfOAPLYyeKccSsEhiYhKB8tNG+o+YwaQBF11Kxn1/d1UTp3WSIkKg/U9wArXEVGJGEAYhCBjYjFD2UrgXqbs2/PSPhTn1MJswyVcWdIYRBU0BbTg0zJawmtdeyAf1fn94iQLAPIDzYeB9frP0AV8zQkvAEASKghIOIWimCG8FQA2AAfAOwJuQYBbAMwAjPSRCkJodg5YGhBFQTnondRsdNDf3+g//BuBGzBgNjDKw0gkwm/f+f183AWKeAj9CunVcoWrqpc/V6vUk1ziUFDZR8MFBtMGUHlkt0Vx/hVoYEAB4ffThsfM8K9vII0DmsGvBtTq9Yfna2mpx686aztWjHH26dyGFQTe/7LlF6SUvmSH3okkNFeTAQH45f+VJdIwnF5J2Fg5Ppzuq/ZJpUdLcYFj4tYkBsbjRZN/b+2//CdCTixQsp1hx3cutkeHCT8fNVYCzsd7IUw7ljc2DULatTLfAKP/oCrNSmRqVG40v/69wrEHvKtqdxjQIR5oH67v772N9vwIAAP//sqLBNkIdyVcAAAAASUVORK5CYII=" data-src=https://hugo-mods.github.io/icons-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.png 420w,
+https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons>
+</picture>
+</div>
+<div class="row center-xs middle-xs overlay">
+<a href=#icons class=gallery-modal-link id=icons></a>
+<div class=col-xs>
+<h2>Icons</h2>
+<h3>Icons that scale.</h3>
+</div>
+</div>
+</div>
+</div>
+<div id=modal-lazyimg class=modal>
+<div class=modal-box>
+<div class=close><svg class="icon"><use xlink:href="#icon-close"/></svg></div>
+<div class=modal-container>
+<div class=modal-header>
+<div class=modal-header-img-container>
+<picture>
+<source type=image/webp srcset=data:image/webp;base64,UklGRooBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGUAAAABYFtbWxNz6FmBBZhAS1o2Mc+kHTuwBRtorRXnRP1/R4gIRW7bNvIpu/UzkrcYS2C1x97CiOcWIERZqwjEYKw1AwDV1lqraaTk6ybtS3JdeNlfFtTZ4eAB3IIuwn1AffrrI+pzAgBWUDgg/gAAANAEAJ0BKhAAEAAAGBInsAJ0XoBdQG+AeUR7BX65+jIUqXlDv5XvgCDM9uk8ruNYAP7D/ae+BXxfhz4MyR1ybb/W1cf/xf0L4daTOoP8tvvcmLvb+qPxa5Pd9zc+2hUCHc9jD3xjvy/LxuCSLR1nU/Hmrd/6IXs7BGKPtTWfcHBuySoMx9yUvYD71fbkURdvegD18/L+f/ebt+5capI5yYPY5Nanv1l/4w6v9v+i48bnFUH//Yhx6P45/eGwf5CzPkftf/wz77+4wSYUev//RrKPC90/rsVUcMP/wa9ObBn/11ddGxY1zU+9ceks/6Z3pnMDC0NestHiMjswRrgA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.webp 420w,
+https://hugo-mods.github.io/lazyimg-600x.webp 600w">
+<noscript>
+<img src=https://hugo-mods.github.io/lazyimg-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
+https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg>
+</noscript><img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTElEQVR4nHyT30sUbxTGnzPvzo6r+9X1x9eIlDVZiQihRMHVm6yFyouwDTQCr5ICb6yLKIL+ggL/CG+iq35IUnQXkhRsBFKauhfuamup6zI6OrPzvidGiHB39Lk8PHzmPGeeN4BD1Bz/AXfrZYdGQN64nLK+tPv6NL/h2E0T61YxxJXxh6Fw5wPpmiHt+PfDvlUu3mDcHiokE/05qyuxsnOsK51kZl8vlQ7mpxUW52RDIc8vDIN6t22J7JY7HYnQwJULofXWjoNLl93A2QOam8RwNIpu3QA0IQAKdkPj4ZPnMF7qD6RvJaBBIUwFEBi/GqiNTIyyAwFmyKIHgSCm0dUUTQ4NLC8cADCELuAkNKh2AlP49aOeb5EbsVUZhSIBMOAtAaVi2ZzzFMA09qeYBfCelkYu9a24Lc8rYTZ4REEuNtz/8ck5D1tVwOIqMBOybgvYA/7TbwCDgQCK2OYaLMsYDLIgoUNnC3ViHSIg92MFsYvcdhO8VKVXp7WRbt3kmgQzeU2hjdbBnnx9/GqeG6EkUKHtogoFrMkTyKwWX83O7R6MkBuJo8B12FOVUNAQHn3Wxg7egDnmAbw/LSWgB3mxuob6xx5nFo7sAbOLpc90jyWeeKE9SNGGVBL3RZDHz/SJo3uQTml498GayG/y9aZavTdsaLBtnonU0kTstCi1+8urbWNnOtl1MWsl+n/u3BksJHnTv8q+rzHQPA9RuzlVbe5NZraC/HElMvXf3agvoOwGf2Wc/Yp6+22HYgU9ci2VmTnl6/sTAAD//yqW9q7emNkLAAAAAElFTkSuQmCC data-src=https://hugo-mods.github.io/lazyimg-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/lazyimg-420x.png 420w,
+https://hugo-mods.github.io/lazyimg-600x.png 600w" alt=hugo-mods/lazyimg>
+</picture>
+</div>
+</div>
+<div class=modal-content>
+<h2>lazyimg</h2>
+<article class=entry-content>
+<p>Lazy image loading with superpowers 🦸</p>
+</article>
+<div class="row center-xs">
+<div class=col-xs>
+<a href=https://github.com/hugo-mods/lazyimg>
+<button type=submit><svg class="icon"><use xlink:href="#icon-get"/></svg> Get it</button>
+</a>
+</div>
+<div class=col-xs>
+<a href=https://hugo-mods-lazyimg.netlify.app/>
+<button type=submit><svg class="icon"><use xlink:href="#icon-example"/></svg> Preview</button>
+</a>
+</div>
+</div>
+<div class="row center-xs"><div class=repo-info>
+<a href=https://github.com/hugo-mods/lazyimg/pulse><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-github-octocat"/></svg></a>
+<a href=https://api.github.com/repos/hugo-mods/lazyimg/languages>HTML (96%) </a>
+&bull; <a href=https://github.com/hugo-mods/lazyimg/stargazers> 3 stars </a>
+&bull; <a href=https://github.com/hugo-mods/lazyimg/issues>6 open issues</a>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div id=modal-icons class=modal>
+<div class=modal-box>
+<div class=close><svg class="icon"><use xlink:href="#icon-close"/></svg></div>
+<div class=modal-container>
+<div class=modal-header>
+<div class=modal-header-img-container>
+<picture>
+<source type=image/webp srcset=data:image/webp;base64,UklGRmYBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSGMAAAABYFNbW5v0smMBAyhgZcVJqqdkwwMucMCeTJzT8/+REBGK3LZt5FN262dUpRirYM33NcPI95EgRHuvCcTivHcLADXee29ophfHqXwhdR6i59aDshwHD+AWdBHuA+rTXx9RnysAVlA4INwAAACwBQCdASoQABAAABgSJ7ACdLoB+AEsA/gHMAbbB/Zt+g0nL2AP2O9IC5AHNH5gG+x21z+WTWAA/v860l5TEoMHgqbzAALvdmf5zWBPdf03+ANgi8vXw/W8fbex92uUmtq8nB7i/l4+AqD7l7Z53QmrExfQ/W8Vq3LYcPgCfPg4MLfUfo//j+EysH/8cFU82fcqqvXQ6zllm8psvGdm83Ecm/pdJqHk3xf/5Ntp7hKSer33hyYfON9f2/cB8TF+2zF0/kvzS9qK2t/tm7W8b7+pDS/fw5J4dnGukiQA height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.webp 420w,
+https://hugo-mods.github.io/icons-600x.webp 600w">
+<noscript>
+<img src=https://hugo-mods.github.io/icons-600x.png loading=lazy height=600 width=600 srcset="https://hugo-mods.github.io/icons-420x.png 420w,
+https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons>
+</noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJElEQVR4nISSz2sTQRzF3/zaZHf7gzVptVgqtAmERCMUlEoOFtpLJUjJwYNQ9F8oePAoqLdePHgXvImI9KAXewo5CYUWD2qKFsRSokXS1iSbnR+ysYXYXfXBwjLzePN58x2Ov+jU6UU4zZ1pAgrmtta39zZjfbEBhJ9DIDv2AfXvUmhj6+A2YV7bqB8RL40LGJ+Yg5A7C4TLsqamfOAPLYyeKccSsEhiYhKB8tNG+o+YwaQBF11Kxn1/d1UTp3WSIkKg/U9wArXEVGJGEAYhCBjYjFD2UrgXqbs2/PSPhTn1MJswyVcWdIYRBU0BbTg0zJawmtdeyAf1fn94iQLAPIDzYeB9frP0AV8zQkvAEASKghIOIWimCG8FQA2AAfAOwJuQYBbAMwAjPSRCkJodg5YGhBFQTnondRsdNDf3+g//BuBGzBgNjDKw0gkwm/f+f183AWKeAj9CunVcoWrqpc/V6vUk1ziUFDZR8MFBtMGUHlkt0Vx/hVoYEAB4ffThsfM8K9vII0DmsGvBtTq9Yfna2mpx686aztWjHH26dyGFQTe/7LlF6SUvmSH3okkNFeTAQH45f+VJdIwnF5J2Fg5Ppzuq/ZJpUdLcYFj4tYkBsbjRZN/b+2//CdCTixQsp1hx3cutkeHCT8fNVYCzsd7IUw7ljc2DULatTLfAKP/oCrNSmRqVG40v/69wrEHvKtqdxjQIR5oH67v772N9vwIAAP//sqLBNkIdyVcAAAAASUVORK5CYII=" data-src=https://hugo-mods.github.io/icons-600x.png class="blur-up lazyload" height=600 width=600 data-sizes=auto data-srcset="https://hugo-mods.github.io/icons-420x.png 420w,
+https://hugo-mods.github.io/icons-600x.png 600w" alt=hugo-mods/icons>
+</picture>
+</div>
+</div>
+<div class=modal-content>
+<h2>Icons</h2>
+<article class=entry-content>
+<p>A Hugo icon system module that scales.</p>
+</article>
+<div class="row center-xs">
+<div class=col-xs>
+<a href=./blog/icons/>
+<button type=submit><svg class="icon"><use xlink:href="#icon-learn"/></svg> Learn more</button>
+</a>
+</div>
+<div class=col-xs>
+<a href=https://github.com/hugo-mods/icons>
+<button type=submit><svg class="icon"><use xlink:href="#icon-get"/></svg> Get it</button>
+</a>
+</div>
+<div class=col-xs>
+<a href=https://hugo-mods-icons.netlify.app/>
+<button type=submit><svg class="icon"><use xlink:href="#icon-example"/></svg> Preview</button>
+</a>
+</div>
+</div>
+<div class="row center-xs"><div class=repo-info>
+<a href=https://github.com/hugo-mods/icons/pulse><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-github-octocat"/></svg></a>
+<a href=https://api.github.com/repos/hugo-mods/icons/languages>HTML (90%) </a>
 &bull; <a href=http://choosealicense.com/licenses/apache-2.0/>Apache-2.0</a>
-&bull; <a href=https://github.com/hugo-mods/icons/stargazers>2 stars</a>
-&bull; <a href=https://github.com/hugo-mods/icons/issues>2 open issues</a></div></div></div></div></div></div></section><section class=blog id=blog><div class=container><div class="row center-xs"><div class=col-xs-12><h1>Latest Posts</h1></div></div><div class="row center-xs"><div class="col-xs-12 posts-list"><article><h2><a href=https://hugo-mods.github.io/blog/icons/>Introducing an icon module that scales</a></h2><div class=sub-header>November 28, 2021 · 5 minutes read</div></article></div></div><div class="row center-xs"><div class=col-xs-12><h3><a href=/blog/><svg class="icon"><use xlink:href="#icon-view"/></svg>View All</a></h3></div></div></div></section><section class=contact id=join><div class=container><div class="row center-xs"><div class=col-xs-12><h1><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-contact"/></svg>Become a contributor</h1><noscript>Please enable JavaScript to use the contact form.</noscript></div></div><form id=form-contact action=https://formspree.io method=post><div class="row center-xs"><div class="col-xs-12 col-sm-6"><input type=text name=name aria-label=name placeholder="Your name" required></div><div class="col-xs-12 col-sm-6"><input type=email id=email name=email aria-label="email address" placeholder="E-Mail address" required></div><div class=col-xs-12><input type=text name=_subject aria-label="email subject" placeholder=Subject required></div><div class=col-xs-12><textarea name=message aria-label="Please enable JS" required></textarea></div><div class=col-xs-12><textarea name=message2 aria-label="email message" placeholder="How/What do you want to contribute?" required hidden></textarea></div><div class="col-xs-12 contact-submit"><input id=form-submit type=submit value=Send>
-<span id=form-sending hidden><svg class="icon"><use xlink:href="#icon-sending"/></svg>Deploying your message...</span>
-<span id=form-thankyou hidden><svg class="icon"><use xlink:href="#icon-ok"/></svg>Thanks for your message!</span>
-<span id=form-error hidden><svg class="icon"><use xlink:href="#icon-warning"/></svg>Sorry, we couldn't send your message! Please reload.</span></div></div></form></div></section></main><footer><div class="row center-xs social"><div class=col-xs-2><a target=_blank rel=noopener href=https://github.com/hugo-mods/><svg class="icon"><use xlink:href="#icon-github"/></svg></a></div><div class=col-xs-2><a target=_blank rel=noopener href=https://github.com/sponsors/kdevo><svg class="icon"><use xlink:href="#icon-heart"/></svg></a></div></div><div class="row center-xs"><div class=col-xs><small>Copyright &copy; 2021 Hugo Community Modules<div class=col-xs><small>Theme: <a href=https://github.com/kdevo/osprey-delight target=_blank rel=noopener>Osprey Delight</a></small></div></small></div></div></footer><script>(()=>{var d=(b,c,a)=>new Promise((f,e)=>{var g=b=>{try{d(a.next(b))}catch(a){e(a)}},h=b=>{try{d(a.throw(b))}catch(a){e(a)}},d=a=>a.done?f(a.value):Promise.resolve(a.value).then(g,h);d((a=a.apply(b,c)).next())}),a,c,j,e,f,g;document.documentElement.className="js",a=document.querySelector.bind(document),c=document.querySelectorAll.bind(document);function b(a,b,c=!0){b?(a.style.visibility="visible",c&&a.removeAttribute("hidden")):(a.style.visibility="hidden",c&&a.setAttribute("hidden",!0)),a.classList.add(b?"show":"hide"),a.classList.remove(b?"hide":"show")}j=class{constructor(b="#termynal",a={}){this.container=typeof b=="string"?document.querySelector(b):b,this.pfx=`data-${a.prefix||"ty"}`,this.startDelay=a.startdelay||800,this.typeDelay=a.typedelay||40,this.lineDelay=a.linedelay||1400,this.progressLength=a.progresslength||32,this.progressChar=a.progresschar||"\u2588",this.progressPercent=a.progressPercent||100,this.showPercent="showpercent"in a&&a.showpercent||!1 in a&&!0,this.onExitCommand=a.onExitCommand,this.cursor=a.cursor||"\u258B",a.noInit||this.init()}init(){this.lines=[...this.container.querySelectorAll(`[${this.pfx}]`)].concat(this.lineData);let a=getComputedStyle(this.container);this.container.style.width=a.width!=="0px"?a.width:void 0,this.container.style.minHeight=a.height!=="0px"?a.height:void 0,this.container.setAttribute("data-termynal",""),this.container.innerHTML="",this.start()}start(){return d(this,null,function*(){yield this._wait(this.startDelay);for(let a of this.lines){if(typeof a=="undefined")break;let c=a.getAttribute(this.pfx),b=a.getAttribute(`${this.pfx}-delay`)||this.lineDelay;c=="input"?(a.setAttribute(`${this.pfx}-cursor`,this.cursor),yield this.type(a),yield this._wait(b),a.textContent==="exit"&&typeof this.onExitCommand!="undefined"&&this.onExitCommand()):c=="progress"?(yield this.progress(a),yield this._wait(b)):(this.container.appendChild(a),yield this._wait(b)),a.removeAttribute(`${this.pfx}-cursor`)}})}type(a){return d(this,null,function*(){let b=[...a.textContent],c=a.getAttribute(`${this.pfx}-typeDelay`)||this.typeDelay;a.textContent="",this.container.appendChild(a);for(let d of b)yield this._wait(c),a.textContent+=d})}progress(a){return d(this,null,function*(){let c=a.getAttribute(`${this.pfx}-progressLength`)||this.progressLength,b=(a.getAttribute(`${this.pfx}-progressChar`)||this.progressChar).repeat(c),d=a.getAttribute(`${this.pfx}-progressPercent`)||this.progressPercent;a.textContent="",this.container.appendChild(a);for(let c=1;c<b.length+1;c++){yield this._wait(this.typeDelay);let e=Math.round(c/b.length*100);if(a.textContent=`${b.slice(0,c)}`,this.showPercent&&(a.textContent+=` ${e}%`),e>d)break}})}_wait(a){return new Promise(b=>setTimeout(b,a))}},(()=>{var d=500,f,g;window.addEventListener("popstate",c=>{c.state==null?(active=a("div.modal.active"),active&&b(active)):"modal"in c.state&&e(a(`#modal-${c.state.modal}`))});function b(a){history.replaceState(null,"",""),box=a.firstElementChild,box.classList.remove("scale-in-center"),box.classList.add("scale-out-center"),setTimeout(()=>a.classList.remove("active"),d)}f={},g={};function e(c){var e,h,i;let k=c.getAttribute("id");c.classList.add("active"),box=c.firstElementChild,box.classList.remove("scale-out-center"),box.classList.add("scale-in-center"),a(`#${k} .close`).onclick=a=>{b(c)},window.onclick=a=>{a.target===c&&b(c)},document.onkeydown=a=>{a.key==="Escape"&&b(c)},e=k.replace("modal-",""),h=a(`#term-${e}`),h!==null&&typeof f[e]=="undefined"&&(i=g[e],i.onExitCommand=()=>{h.classList.add("scale-out-center"),setTimeout(()=>{a(`#content-${e}`).removeAttribute("hidden"),h.setAttribute("hidden",!0)},d+10)},f[e]=new j(h,i))}c(".gallery-modal-link").forEach(b=>{b.onclick=b=>{b.preventDefault(),id=b.target.getAttribute("href").substr(1),history.pushState({modal:id},"",`#${id}`),e(a(`#modal-${id}`))};let c=window.location.href,f=c.substring(c.lastIndexOf("/")+1);b.getAttribute("href")==f&&setTimeout(()=>{e(a(`#modal-${b.getAttribute("href").substr(1)}`))},d*2)})})(),e=!1,f=!1,g=a("nav"),navToggleAndLogo=c("nav > .logo, nav > .nav-toggle");function i(a){a?(g.classList.add("nav-fixed"),navToggleAndLogo.forEach(a=>{b(a,!0,!1)})):(g.classList.remove("nav-fixed"),navToggleAndLogo.forEach(a=>{b(a,!1,!1)})),f=a}function h(){e?a(".nav-icon").classList.remove("icon-active"):a(".nav-icon").classList.add("icon-active"),e=!e}a(".nav-icon").addEventListener("click",()=>{h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")})}),c(".nav-full a").forEach(a=>{a.addEventListener("click",()=>{h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")})})}),a(".logo").addEventListener("click",()=>{a(".nav-full").classList.contains("active")&&(h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")}))}),a("body").addEventListener("click",()=>{a(".nav-full").classList.contains("active")?a("html").style.overflowY="hidden":a("html").style.overflowY="scroll"}),(()=>{let b=[...c(".nav-item")],a=[...c("main > section")].reverse(),e=330;var d=-1;function h(c){b.forEach(a=>{a.classList.remove("nav-item-active")}),c<a.length&&b[c].classList.add("nav-item-active"),d=c}window.addEventListener("scroll",()=>{var b=window.scrollY||window.pageYOffset;windowHeight=window.innerHeight,navHeight=g.clientHeight,b>windowHeight-navHeight?f||requestAnimationFrame(()=>i(!0)):f&&requestAnimationFrame(()=>i(!1));let c=a.length-1-a.findIndex(a=>b>a.offsetTop-e);c!=d&&requestAnimationFrame(()=>{h(c)})})})(),(()=>{var c=a("textarea[name=message2]"),d=a("textarea[name=message]");c!==null&&(b(c,!0),b(d,!1),d.removeAttribute("required"),a("#form-contact").addEventListener("submit",m=>{var i,e,f,j,g,h,k,l;m.preventDefault(),i=a("input[name=email]").value,e=new XMLHttpRequest,f={name:a("input[name=name]").value,_replyto:i,email:i,_subject:a("input[name=_subject]").value,message:c.value},j=d.value,j!==""&&(f._anti_spam_honeypot=j),matter=a("select[name=matter]"),matter&&(f._matter=matter.value),g=a("#form-sending"),h=a("#form-submit"),k=a("#form-thankyou"),l=a("#form-error"),b(h,!1),b(g,!0),e.open("POST","https://usebasin.com/f/bc2e65d1edb1",!0),e.setRequestHeader("Content-Type","application/json"),e.setRequestHeader("Accept","application/json"),e.onreadystatechange=()=>{if(e.readyState===XMLHttpRequest.DONE)if(e.status===200){let e=function(){b(g,!1),b(k,!0),setTimeout(f,6e3)},f=function(){b(k,!1),b(h,!0)};var c=e,d=f;a("#form-contact").reset(),e()}else b(g,!1),b(l,!0)},e.send(JSON.stringify(f))}))})()})()</script><svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="icon-close" viewBox="0 0 352 512"><title>Close</title><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19.0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48.0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48.0L9.21 111.45c-12.28 12.28-12.28 32.19.0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19.0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48.0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48.0l22.24-22.24c12.28-12.28 12.28-32.19.0-44.48L242.72 256z"/></symbol><symbol id="icon-code" viewBox="0 0 640 512"><title>Terminal</title><path d="M257.981 272.971 63.638 467.314c-9.373 9.373-24.569 9.373-33.941.0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941.0L257.981 239.03c9.373 9.372 9.373 24.568.0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255.0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255.0 24-10.745 24-24z"/></symbol><symbol id="icon-contact" viewBox="0 0 448 512"><title>User Astronaut</title><path d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8.0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6.0 224 0S102.2 39.5 77.5 96H64c-8.8.0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5.0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72 12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5.0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7.0 32 14.3 32 32v64h80c26.5.0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8.0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8.0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"/></symbol><symbol id="icon-download" viewBox="0 0 512 512"><title>Download</title><path d="M216 0h80c13.3.0 24 10.7 24 24v168h87.7c17.8.0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3.0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3.0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6.0l49-49H488c13.3.0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></symbol><symbol id="icon-example" viewBox="0 0 576 512"><desc>View preview</desc><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35.0 000 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35.0 000-29.19zM288 4e2a144 144 0 11144-144A143.93 143.93.0 01288 4e2zm0-240a95.31 95.31.0 00-25.31 3.79 47.85 47.85.0 01-66.9 66.9A95.78 95.78.0 10288 160z"/></symbol><symbol id="icon-get" viewBox="0 0 320 512"><desc>Go get it</desc><path d="M285.476 272.971 91.132 467.314c-9.373 9.373-24.569 9.373-33.941.0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941.0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></symbol><symbol id="icon-github" viewBox="0 0 496 512"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol><symbol id="icon-github-octocat" viewBox="0 0 480 512"><title>Alternate GitHub</title><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8.0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8.0-21.5 4.9-32.3 14.6-51.8 45.3.0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8.0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9.0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2.0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8.0-73.5 38.7-73.5 82.6.0 87.8 80.4 101.3 150.4 101.3h48.2c70.3.0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8.0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></symbol><symbol id="icon-heart" viewBox="0 0 512 512"><desc>Donate</desc><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3.0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></symbol><symbol id="icon-learn" viewBox="0 0 640 512"><desc>Learn more</desc><path d="M622.34 153.2 343.4 67.5c-15.2-4.67-31.6-4.67-46.79.0L17.66 153.2c-23.54 7.23-23.54 38.36.0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24.0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79.0l278.95-85.7c23.55-7.24 23.55-38.36.0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59.0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></symbol><symbol id="icon-menu" viewBox="0 0 448 512"><desc>Menu</desc><path d="M16 132h416c8.837.0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163.0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837.0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837.0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837.0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837.0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></symbol><symbol id="icon-ok" viewBox="0 0 512 512"><title>Check Circle</title><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379.0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628.0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628.0l-22.627 22.627c-6.248 6.248-6.248 16.379.0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="icon-sending" viewBox="0 0 640 512"><title>Space Shuttle</title><path d="M592.604 208.244C559.735 192.836 515.777 184 472 184H186.327c-4.952-6.555-10.585-11.978-16.72-16H376C229.157 137.747 219.403 32 96.003 32H96v128H80V32c-26.51.0-48 28.654-48 64v64c-23.197.0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v16c-23.197.0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v64c0 35.346 21.49 64 48 64V352h16v128h.003c123.4.0 133.154-105.747 279.997-136H169.606c6.135-4.022 11.768-9.445 16.72-16H472c43.777.0 87.735-8.836 120.604-24.244C622.282 289.845 640 271.992 640 256s-17.718-33.845-47.396-47.756zM488 296a8 8 0 01-8-8v-64a8 8 0 018-8c31.909.0 31.942 80 0 80z"/></symbol><symbol id="icon-view" viewBox="0 0 256 512"><title>angle-right</title><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9.0l-22.6-22.6c-9.4-9.4-9.4-24.6.0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6.0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9.0l136 136c9.5 9.4 9.5 24.6.1 34z"/></symbol><symbol id="icon-warning" viewBox="0 0 576 512"><title>Warning</title><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937.0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154.0l239.94 416.028zM288 354c-25.405.0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346 7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373.0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884.0-12.356 5.78-11.981 12.654z"/></symbol></svg></body></html>
+&bull; <a href=https://github.com/hugo-mods/icons/stargazers> 2 stars </a>
+&bull; <a href=https://github.com/hugo-mods/icons/issues>2 open issues</a>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=blog id=blog>
+<div class=container>
+<div class="row center-xs">
+<div class=col-xs-12><h1>Latest Posts</h1></div>
+</div>
+<div class="row center-xs">
+<div class="col-xs-12 posts-list">
+<article>
+<h2><a href=https://hugo-mods.github.io/blog/icons/>Introducing an icon module that scales</a></h2>
+<div class=sub-header>
+November 28, 2021 · 5 minutes read
+</div>
+</article>
+</div>
+</div>
+<div class="row center-xs">
+<div class=col-xs-12><h3><a href=/blog/><svg class="icon"><use xlink:href="#icon-view"/></svg> View All</a></h3></div>
+</div>
+</div>
+</section>
+<section class=contact id=join>
+<div class=container>
+<div class="row center-xs">
+<div class=col-xs-12>
+<h1><svg class="icon" style="margin-right:.2em;margin-left:.2em"><use xlink:href="#icon-contact"/></svg> Become a contributor</h1>
+<noscript>Please enable JavaScript to use the contact form.</noscript>
+</div>
+</div>
+<form id=form-contact action=https://formspree.io method=post>
+<div class="row center-xs">
+<div class="col-xs-12 col-sm-6"><input type=text name=name aria-label=name placeholder="Your name" required></div>
+<div class="col-xs-12 col-sm-6"><input type=email id=email name=email aria-label="email address" placeholder="E-Mail address" required></div>
+<div class=col-xs-12><input type=text name=_subject aria-label="email subject" placeholder=Subject required></div>
+<div class=col-xs-12>
+<textarea name=message aria-label="Please enable JS" required></textarea>
+</div>
+<div class=col-xs-12>
+<textarea name=message2 aria-label="email message" placeholder="How/What do you want to contribute?" required hidden></textarea>
+</div>
+<div class="col-xs-12 contact-submit">
+<input id=form-submit type=submit value=Send>
+<span id=form-sending hidden><svg class="icon"><use xlink:href="#icon-sending"/></svg> Deploying your message...</span>
+<span id=form-thankyou hidden><svg class="icon"><use xlink:href="#icon-ok"/></svg> Thanks for your message!</span>
+<span id=form-error hidden><svg class="icon"><use xlink:href="#icon-warning"/></svg> Sorry, we couldn't send your message! Please reload.</span>
+</div>
+</div>
+</form>
+</div>
+</section>
+</main>
+<footer>
+<div class="row center-xs social">
+<div class=col-xs-2>
+<a target=_blank rel=noopener href=https://github.com/hugo-mods/><svg class="icon"><use xlink:href="#icon-github"/></svg>
+</a>
+</div><div class=col-xs-2>
+<a target=_blank rel=noopener href=https://github.com/sponsors/kdevo><svg class="icon"><use xlink:href="#icon-heart"/></svg>
+</a>
+</div>
+</div>
+<div class="row center-xs">
+<div class=col-xs>
+<small>
+Copyright &copy; 2021 Hugo Community Modules
+<div class=col-xs>
+<small>Theme: <a href=https://github.com/kdevo/osprey-delight target=_blank rel=noopener>Osprey Delight</a></small>
+</div>
+</small>
+</div>
+</div>
+</footer>
+<script>(()=>{var d=(b,c,a)=>new Promise((f,e)=>{var g=b=>{try{d(a.next(b))}catch(a){e(a)}},h=b=>{try{d(a.throw(b))}catch(a){e(a)}},d=a=>a.done?f(a.value):Promise.resolve(a.value).then(g,h);d((a=a.apply(b,c)).next())}),a,c,j,e,f,g;document.documentElement.className="js",a=document.querySelector.bind(document),c=document.querySelectorAll.bind(document);function b(a,b,c=!0){b?(a.style.visibility="visible",c&&a.removeAttribute("hidden")):(a.style.visibility="hidden",c&&a.setAttribute("hidden",!0)),a.classList.add(b?"show":"hide"),a.classList.remove(b?"hide":"show")}j=class{constructor(b="#termynal",a={}){this.container=typeof b=="string"?document.querySelector(b):b,this.pfx=`data-${a.prefix||"ty"}`,this.startDelay=a.startdelay||800,this.typeDelay=a.typedelay||40,this.lineDelay=a.linedelay||1400,this.progressLength=a.progresslength||32,this.progressChar=a.progresschar||"\u2588",this.progressPercent=a.progressPercent||100,this.showPercent="showpercent"in a&&a.showpercent||!1 in a&&!0,this.onExitCommand=a.onExitCommand,this.cursor=a.cursor||"\u258B",a.noInit||this.init()}init(){this.lines=[...this.container.querySelectorAll(`[${this.pfx}]`)].concat(this.lineData);let a=getComputedStyle(this.container);this.container.style.width=a.width!=="0px"?a.width:void 0,this.container.style.minHeight=a.height!=="0px"?a.height:void 0,this.container.setAttribute("data-termynal",""),this.container.innerHTML="",this.start()}start(){return d(this,null,function*(){yield this._wait(this.startDelay);for(let a of this.lines){if(typeof a=="undefined")break;let c=a.getAttribute(this.pfx),b=a.getAttribute(`${this.pfx}-delay`)||this.lineDelay;c=="input"?(a.setAttribute(`${this.pfx}-cursor`,this.cursor),yield this.type(a),yield this._wait(b),a.textContent==="exit"&&typeof this.onExitCommand!="undefined"&&this.onExitCommand()):c=="progress"?(yield this.progress(a),yield this._wait(b)):(this.container.appendChild(a),yield this._wait(b)),a.removeAttribute(`${this.pfx}-cursor`)}})}type(a){return d(this,null,function*(){let b=[...a.textContent],c=a.getAttribute(`${this.pfx}-typeDelay`)||this.typeDelay;a.textContent="",this.container.appendChild(a);for(let d of b)yield this._wait(c),a.textContent+=d})}progress(a){return d(this,null,function*(){let c=a.getAttribute(`${this.pfx}-progressLength`)||this.progressLength,b=(a.getAttribute(`${this.pfx}-progressChar`)||this.progressChar).repeat(c),d=a.getAttribute(`${this.pfx}-progressPercent`)||this.progressPercent;a.textContent="",this.container.appendChild(a);for(let c=1;c<b.length+1;c++){yield this._wait(this.typeDelay);let e=Math.round(c/b.length*100);if(a.textContent=`${b.slice(0,c)}`,this.showPercent&&(a.textContent+=` ${e}%`),e>d)break}})}_wait(a){return new Promise(b=>setTimeout(b,a))}},(()=>{var d=500,f,g;window.addEventListener("popstate",c=>{c.state==null?(active=a("div.modal.active"),active&&b(active)):"modal"in c.state&&e(a(`#modal-${c.state.modal}`))});function b(a){history.replaceState(null,"",""),box=a.firstElementChild,box.classList.remove("scale-in-center"),box.classList.add("scale-out-center"),setTimeout(()=>a.classList.remove("active"),d)}f={},g={};function e(c){var e,h,i;let k=c.getAttribute("id");c.classList.add("active"),box=c.firstElementChild,box.classList.remove("scale-out-center"),box.classList.add("scale-in-center"),a(`#${k} .close`).onclick=a=>{b(c)},window.onclick=a=>{a.target===c&&b(c)},document.onkeydown=a=>{a.key==="Escape"&&b(c)},e=k.replace("modal-",""),h=a(`#term-${e}`),h!==null&&typeof f[e]=="undefined"&&(i=g[e],i.onExitCommand=()=>{h.classList.add("scale-out-center"),setTimeout(()=>{a(`#content-${e}`).removeAttribute("hidden"),h.setAttribute("hidden",!0)},d+10)},f[e]=new j(h,i))}c(".gallery-modal-link").forEach(b=>{b.onclick=b=>{b.preventDefault(),id=b.target.getAttribute("href").substr(1),history.pushState({modal:id},"",`#${id}`),e(a(`#modal-${id}`))};let c=window.location.href,f=c.substring(c.lastIndexOf("/")+1);b.getAttribute("href")==f&&setTimeout(()=>{e(a(`#modal-${b.getAttribute("href").substr(1)}`))},d*2)})})(),e=!1,f=!1,g=a("nav"),navToggleAndLogo=c("nav > .logo, nav > .nav-toggle");function i(a){a?(g.classList.add("nav-fixed"),navToggleAndLogo.forEach(a=>{b(a,!0,!1)})):(g.classList.remove("nav-fixed"),navToggleAndLogo.forEach(a=>{b(a,!1,!1)})),f=a}function h(){e?a(".nav-icon").classList.remove("icon-active"):a(".nav-icon").classList.add("icon-active"),e=!e}a(".nav-icon").addEventListener("click",()=>{h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")})}),c(".nav-full a").forEach(a=>{a.addEventListener("click",()=>{h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")})})}),a(".logo").addEventListener("click",()=>{a(".nav-full").classList.contains("active")&&(h(),c(".nav-full, main").forEach(a=>{a.classList.toggle("active")}))}),a("body").addEventListener("click",()=>{a(".nav-full").classList.contains("active")?a("html").style.overflowY="hidden":a("html").style.overflowY="scroll"}),(()=>{let b=[...c(".nav-item")],a=[...c("main > section")].reverse(),e=330;var d=-1;function h(c){b.forEach(a=>{a.classList.remove("nav-item-active")}),c<a.length&&b[c].classList.add("nav-item-active"),d=c}window.addEventListener("scroll",()=>{var b=window.scrollY||window.pageYOffset;windowHeight=window.innerHeight,navHeight=g.clientHeight,b>windowHeight-navHeight?f||requestAnimationFrame(()=>i(!0)):f&&requestAnimationFrame(()=>i(!1));let c=a.length-1-a.findIndex(a=>b>a.offsetTop-e);c!=d&&requestAnimationFrame(()=>{h(c)})})})(),(()=>{var c=a("textarea[name=message2]"),d=a("textarea[name=message]");c!==null&&(b(c,!0),b(d,!1),d.removeAttribute("required"),a("#form-contact").addEventListener("submit",m=>{var i,e,f,j,g,h,k,l;m.preventDefault(),i=a("input[name=email]").value,e=new XMLHttpRequest,f={name:a("input[name=name]").value,_replyto:i,email:i,_subject:a("input[name=_subject]").value,message:c.value},j=d.value,j!==""&&(f._anti_spam_honeypot=j),matter=a("select[name=matter]"),matter&&(f._matter=matter.value),g=a("#form-sending"),h=a("#form-submit"),k=a("#form-thankyou"),l=a("#form-error"),b(h,!1),b(g,!0),e.open("POST","https://usebasin.com/f/bc2e65d1edb1",!0),e.setRequestHeader("Content-Type","application/json"),e.setRequestHeader("Accept","application/json"),e.onreadystatechange=()=>{if(e.readyState===XMLHttpRequest.DONE)if(e.status===200){let e=function(){b(g,!1),b(k,!0),setTimeout(f,6e3)},f=function(){b(k,!1),b(h,!0)};var c=e,d=f;a("#form-contact").reset(),e()}else b(g,!1),b(l,!0)},e.send(JSON.stringify(f))}))})()})()</script><svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="icon-close" viewBox="0 0 352 512"><title>Close</title><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19.0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48.0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48.0L9.21 111.45c-12.28 12.28-12.28 32.19.0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19.0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48.0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48.0l22.24-22.24c12.28-12.28 12.28-32.19.0-44.48L242.72 256z"/></symbol><symbol id="icon-code" viewBox="0 0 640 512"><title>Terminal</title><path d="M257.981 272.971 63.638 467.314c-9.373 9.373-24.569 9.373-33.941.0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941.0L257.981 239.03c9.373 9.372 9.373 24.568.0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255.0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255.0 24-10.745 24-24z"/></symbol><symbol id="icon-contact" viewBox="0 0 448 512"><title>User Astronaut</title><path d="M64 224h13.5c24.7 56.5 80.9 96 146.5 96s121.8-39.5 146.5-96H384c8.8.0 16-7.2 16-16v-96c0-8.8-7.2-16-16-16h-13.5C345.8 39.5 289.6.0 224 0S102.2 39.5 77.5 96H64c-8.8.0-16 7.2-16 16v96c0 8.8 7.2 16 16 16zm40-88c0-22.1 21.5-40 48-40h144c26.5.0 48 17.9 48 40v24c0 53-43 96-96 96h-48c-53 0-96-43-96-96v-24zm72 72 12-36 36-12-36-12-12-36-12 36-36 12 36 12 12 36zm151.6 113.4C297.7 340.7 262.2 352 224 352s-73.7-11.3-103.6-30.6C52.9 328.5.0 385 0 454.4v9.6c0 26.5 21.5 48 48 48h80v-64c0-17.7 14.3-32 32-32h128c17.7.0 32 14.3 32 32v64h80c26.5.0 48-21.5 48-48v-9.6c0-69.4-52.9-125.9-120.4-133zM272 448c-8.8.0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm-96 0c-8.8.0-16 7.2-16 16v48h32v-48c0-8.8-7.2-16-16-16z"/></symbol><symbol id="icon-download" viewBox="0 0 512 512"><title>Download</title><path d="M216 0h80c13.3.0 24 10.7 24 24v168h87.7c17.8.0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3.0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3.0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6.0l49-49H488c13.3.0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/></symbol><symbol id="icon-example" viewBox="0 0 576 512"><desc>View preview</desc><path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35.0 000 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35.0 000-29.19zM288 4e2a144 144 0 11144-144A143.93 143.93.0 01288 4e2zm0-240a95.31 95.31.0 00-25.31 3.79 47.85 47.85.0 01-66.9 66.9A95.78 95.78.0 10288 160z"/></symbol><symbol id="icon-get" viewBox="0 0 320 512"><desc>Go get it</desc><path d="M285.476 272.971 91.132 467.314c-9.373 9.373-24.569 9.373-33.941.0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941.0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></symbol><symbol id="icon-github" viewBox="0 0 496 512"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6.0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6.0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3.0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1.0-6.2-.3-40.4-.3-61.4.0.0-70 15-84.7-29.8.0.0-11.4-29.1-27.8-36.6.0.0-22.9-15.7 1.6-15.4.0.0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5.0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9.0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4.0 33.7-.3 75.4-.3 83.6.0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6.0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9.0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol><symbol id="icon-github-octocat" viewBox="0 0 480 512"><title>Alternate GitHub</title><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8.0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8.0-21.5 4.9-32.3 14.6-51.8 45.3.0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8.0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9.0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2.0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8.0-73.5 38.7-73.5 82.6.0 87.8 80.4 101.3 150.4 101.3h48.2c70.3.0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8.0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></symbol><symbol id="icon-heart" viewBox="0 0 512 512"><desc>Donate</desc><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3.0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></symbol><symbol id="icon-learn" viewBox="0 0 640 512"><desc>Learn more</desc><path d="M622.34 153.2 343.4 67.5c-15.2-4.67-31.6-4.67-46.79.0L17.66 153.2c-23.54 7.23-23.54 38.36.0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24.0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79.0l278.95-85.7c23.55-7.24 23.55-38.36.0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59.0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></symbol><symbol id="icon-menu" viewBox="0 0 448 512"><desc>Menu</desc><path d="M16 132h416c8.837.0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163.0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837.0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837.0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837.0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837.0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></symbol><symbol id="icon-ok" viewBox="0 0 512 512"><title>Check Circle</title><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379.0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628.0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628.0l-22.627 22.627c-6.248 6.248-6.248 16.379.0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="icon-sending" viewBox="0 0 640 512"><title>Space Shuttle</title><path d="M592.604 208.244C559.735 192.836 515.777 184 472 184H186.327c-4.952-6.555-10.585-11.978-16.72-16H376C229.157 137.747 219.403 32 96.003 32H96v128H80V32c-26.51.0-48 28.654-48 64v64c-23.197.0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v16c-23.197.0-32 10.032-32 24v40c0 13.983 8.819 24 32 24v64c0 35.346 21.49 64 48 64V352h16v128h.003c123.4.0 133.154-105.747 279.997-136H169.606c6.135-4.022 11.768-9.445 16.72-16H472c43.777.0 87.735-8.836 120.604-24.244C622.282 289.845 640 271.992 640 256s-17.718-33.845-47.396-47.756zM488 296a8 8 0 01-8-8v-64a8 8 0 018-8c31.909.0 31.942 80 0 80z"/></symbol><symbol id="icon-view" viewBox="0 0 256 512"><title>angle-right</title><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9.0l-22.6-22.6c-9.4-9.4-9.4-24.6.0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6.0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9.0l136 136c9.5 9.4 9.5 24.6.1 34z"/></symbol><symbol id="icon-warning" viewBox="0 0 576 512"><title>Warning</title><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937.0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154.0l239.94 416.028zM288 354c-25.405.0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346 7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373.0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884.0-12.356 5.78-11.981 12.654z"/></symbol></svg>
+</body>
+</html>
