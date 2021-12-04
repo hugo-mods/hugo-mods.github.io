@@ -19,12 +19,3 @@
 #termynal-about:after {
     content: "";
 }
-
-// Needed for now as hugo --minify trims the whitespace
-// TODO(kdevo): examine situation and re-evaluate if this can be solved more elegantly
-p {
-    .icon:before {
-        content: " ";
-        white-space: pre;
-    }
-}
