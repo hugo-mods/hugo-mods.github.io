@@ -1,0 +1,40 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  discussion:
+    types: [created, edited, deleted, answered, unanswered, locked, unlocked]
+  discussion_comment:
+    types: [created, edited, edited]
+
+jobs:
+  bridge_discussions:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      
+      - uses: hugo-mods/discussions-action@v0.1.0
+        name: Run bridge
+        with:
+          category-name: Blog
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          site-rss-url: "https://hugo-mods.github.io/index.xml"
+          site-map-url: "https://hugo-mods.github.io/sitemap.xml"
+          site-url-prefix: "https://hugo-mods.github.io/blog/"
+          
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: false
+
+      - name: Build and run tests
+        run: hugo --minify
+        # working-directory: exampleSite
+  
+permissions:
+  contents: read
+  discussions: write
