@@ -42,6 +42,5 @@ jobs:
           publish_dir: ./public
   
 permissions:
-  contents: read
   discussions: write
   contents: write
